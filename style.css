@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: url('assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    background: rgb(0 0 0 / 40%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 43px;
+    padding: 43px 23px;
+}
+
+nav img {
+    height: 4.5rem;
+    width: 12rem;
+}
+
+.lang-selector {
+    height: 32px;
+    width: 126px;
+    padding: 6px 30px;
+    border-radius: 4px;
+    background: rgba(22, 22, 22, 0.7);
+    color: white;
+}
+
+nav button {
+    height: 32px;
+    width: 76px;
+    background: rgb(229, 9, 20);
+    border-radius: 4px;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+nav button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    height: calc(100vh - 86px);
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content1 {
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero-content2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.hero-form {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.hero-form span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.form-content input {
+    width: 350px;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.form-content button {
+    font-size: 24px;
+    font-weight: 500;
+    width: 190px;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    background: rgb(229, 9, 20);
+    border: none;
+    color: white;
+}
+
+.form-content button i {
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+    font-weight: 400;
+}
+
+.separation {
+    height: 8px;
+    background-color: rgb(35, 35, 35);
+}
+
+.first {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.first-content {
+    width: 60%;
+    height: 75vh;
+    margin-left: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.first-image {
+    width: 50%;
+    height: 75vh;
+    margin-right: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.first-content :first-child {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.first-content :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.first-image img {
+    height: 370px;
+    width: 470px;
+    position: relative;
+    z-index: 1;
+}
+
+.first-image video {
+    position: absolute;
+    height: 250px;
+    width: 500px;
+}
+
+
+.second {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.second-image {
+    width: 50%;
+    height: 75vh;
+    margin-left: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 300px;
+    border-radius: 8px;
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    background-color: black;
+    padding: 0.8rem;
+}
+
+.second-image :first-child {
+    height: 380px;
+    width: 450px;
+    position: relative;
+}
+
+.image-container :first-child {
+    height: 70px;
+    width: 80px;
+}
+
+.image-container :nth-child(3) {
+    height: 40px;
+    width: 40px;
+}
+
+.second-content {
+    width: 50%;
+    height: 75vh;
+    margin-right: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.second-content :first-child {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.second-content :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.third-image {
+    position: relative;
+}
+
+.third-image video {
+    position: absolute;
+    top: 0;
+    height: 320px;
+    width: 300px;
+}
+
+.fourth-image {
+    width: 50%;
+    height: 75vh;
+    margin-left: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-image img {
+    height: 380px;
+    width: 520px;
+}
+
+.faq {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.faq-heading {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.accordian-list {
+    height: 520px;
+    margin: 0 160px 0 150px;
+}
+
+.accordian ul li {
+    list-style: none;
+    margin-bottom: 9px;
+}
+
+ul h3 {
+    height: 80px;
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    position: relative;
+}
+
+ul h3 :hover{
+    background-color:rgb(75, 75, 75);
+}
+
+ul button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: none;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 450;
+    color: white;
+}
+
+ul p {
+    color: white;
+}
+
+.accordian-form {
+    margin-top: 50px;
+}
+
+footer{
+    width: 100vw;
+    height: 380px;
+    padding: 60px 200px 70px 150px;
+    background-color: black;
+    color:rgba(255,255,255,0.7);
+}
+
+.footer-row2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-column p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.footer-row4{
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width : 1027px){
+    .first-content {
+        margin-left: 2rem;
+    }
+
+    .first-image {
+        margin-right: 2rem;
+    }
+
+    .second-image {
+        margin-left: 2rem;
+    }
+
+    .second-content {
+        margin-right: 2rem;
+    }
+
+    .fourth-image {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width : 959px){
+    .hero-content1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .hero-content2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    nav {
+        max-width: 90vw;
+        height: 43px;
+        padding: 43px 10px;
+    }
+    nav img {
+        height: 60px;
+        width: 120px;
+    }
+    .first {
+        height: 100%;
+        padding: 80px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-content {
+        height: 150px;
+        width: 76%;
+        margin: 0;
+        align-items: center;
+    }
+    .first-content :first-child {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .first-content :nth-child(2) {
+        font-size: 18px;
+    }
+    .first-image {
+        width: 76%;
+        margin: 0;
+    }
+    .first-image img {
+        height: 390px;
+        width: 600px;
+    }
+    .second {
+        height: 100%;
+        padding: 80px 0;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .second-content {
+        height: 150px;
+        width: 76%;
+        margin: 0;
+        align-items: center;
+    }
+    .second-content :first-child {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .second-content :nth-child(2) {
+        font-size: 18px;
+    }
+    .second-image {
+        width: 76%;
+        margin: 0;
+    }
+    .second-image :first-child {
+        width: 600px;
+    }
+    .image-container {
+        height: 90px;
+        width: 330px;
+    }
+    .image-container :first-child {
+        height: 70px;
+        width: 70px;
+    }
+    .third-image video {
+        height: 270px;
+        width: 370px;
+    }
+    .fourth-image {
+        margin: 0;
+    }
+    .faq-heading {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    ul button {
+        font-size: 18px;
+    }
+}
